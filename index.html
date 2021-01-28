@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body >
+
+  <div class="mainContainer">
+
+    
+      <div id='heroSection'>
+         <div id= 'heroFixedAnchorLinks'>
+            <a href="#historySection"  class='fixedNavLinks-hero'  > 01. HISTORY</a>
+            <a href='#teamSection'  class='fixedNavLinks-hero' > 02. TEAM</a>
+         </div>
+      </div>
+       
+    
+      <div id="navbar">           
+          <img src='./Public/Sticky LA Logo.png' class='navBarlosAngelesLogo' alt="Los Angeles Mountains Logo" />
+          <div class='anchorLinks'>
+          <a href="#historySection"  class='navBarLinkHistoryNavLinks' > 01. HISTORY</a>
+          <a href='#teamSection'  class='navBarLinkTeamNavLinks'>02. TEAM</a>
+      </div>  
+        
+       
+   
+        
+      </div>
+      
+      <div id='historySection' >
+     
+          <div class='carouselContainer'> 
+            
+            <button class=carouselButton_left> < </button>
+              <div class=carousel>
+                
+                <ul class=carouselTrack>
+
+                  <li class=imageSlide> 
+                    <img src='./Public/group10-TN.png' alt=''/>
+                  </li>
+
+                  <li class=imageSlide>
+                    <img src='./Public/group8-TN.png' alt=''/>
+                  </li>
+
+                  <li class=imageSlide>
+                    <img src='./Public/group10-TN.png' alt=''/>
+                  </li>
+
+                  <li class=imageSlide>
+                    <img src='./Public/group8-TN.png' alt=''/>
+                  </li>
+
+                </ul>
+                
+              </div>
+           <button class=carouselButton_right> > </button>  
+            
+          </div>
+
+      </div>
+
+      <div id='teamSection' >
+    
+      </div>
+  
+      
+        <div id='mountainSwitchContainer'>
+           <div class='teamButton'>
+              <button id='mountainSwitchButton' onclick="mountainOne()">MOUNTAIN 1</button>
+              <button id='mountainSwitchButton' onclick="mountainTwo()">MOUNTAIN 2</button>
+           </div> 
+        </div>
+      
+        <div id='teamImage'>
+
+        </div>
+        
+  </div>
+
+ <script>
+    window.onscroll = function() {stickyScroll()};
+    const navbar = document.getElementById("navbar");
+    const sticky = navbar.offsetTop;
+
+    function stickyScroll() {
+      if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+      } else {
+      navbar.classList.remove("sticky");
+      }
+    }
+
+      let images = ['./Public/Team1.png', './Public/Team2.png'];
+      function mountainOne() {
+        document.getElementById('teamImage').style.backgroundImage = 'url(./Public/Team1.png)';
+      }
+      
+      function mountainTwo() {
+        document.getElementById('teamImage').style.backgroundImage = 'url(./Public/Team2.png)';
+      }
+
+  </script>   
+</body>
+</html>

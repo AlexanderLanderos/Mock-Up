@@ -1,0 +1,182 @@
+
+body {
+  display: flex;
+  margin: 0; 
+ }
+
+ .mainContainer {
+   position: relative;
+ }
+
+ 
+
+ .mainContainer{
+   width: 100vw;
+ }
+ 
+ .header {
+   background-color: #f1f1f1;
+   padding: 30px;
+   text-align: center;
+ }
+ 
+ /* Navbar Sticky */
+ #navbar {
+   
+   overflow: hidden;
+   background-color: white;
+   padding: 0% 5%;
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+   
+ }
+ 
+ #navbar a {
+   display: block;
+   color: #414f6c;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: underline;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   ;
+ }
+ 
+ #navbar a:hover {
+   color: black;
+ }
+ 
+ #navbar a.active {
+   color: white;
+ }
+ 
+ .navBarlosAngelesLogo {
+   display: flex;
+   padding-left: 5%;
+ }
+ 
+ .content {
+   padding: 16px;
+ }
+ 
+ .sticky {
+   position: sticky;
+   top: 0;
+   width: 90%;
+ }
+ 
+ .sticky + .content {
+   padding-top: 60px;
+ }
+ 
+ /* Anchor Links */
+ 
+ .anchorLinks{
+   display: flex;
+   padding-right: 0%;
+ }
+ 
+ #heroFixedAnchorLinks {
+   display: flex;
+   justify-content:flex-end;
+   padding-top: 1.5%;
+   padding-right: 5%; 
+ }
+ 
+ #historyFixedNavLinks {
+   margin: 10%;
+ }
+
+ .fixedNavLinks-hero{
+  color: white;
+  padding: 14px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+ #FixedAnchorlinks {
+   color: white;
+   font-size: 14px;
+   padding: 14px 16px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* Mountain Container */
+ #mountainSwitchContainer {
+   background-color: #414f6b;
+   flex-grow: 1;
+ }
+ 
+ #mountainSwitchButton {
+   transition-duration: 0.2s ;
+   background-color:#414f6b ;
+   color: #afb4be;
+   outline: none;
+   border: none;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 1%;
+   font-size:2vw;
+ }
+ 
+ #mountainSwitchButton:hover {
+   background-color: #afb4be;
+   color: #414f6b;
+   text-decoration: underline;
+ }
+ 
+ .teamButton {
+   display: flex;
+   padding-left: 21%;
+ }
+ 
+ /* Images */
+ #heroSection {
+   height: 115vh;
+   background-image: url('./Public/Hero1.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+ }
+ 
+ #historySection {
+   height: 115vh;
+   background-image: url('./Public/History.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+ }
+ 
+ #teamSection {
+   height: 20vh;
+   background-image: url('./Public/TeamHeader.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+ }
+ 
+ #teamImage {
+   height: 90vh;
+   background-image: url('./Public/Team1.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+ }
+
+ /* Carousel */
+
+ 
+.carousel {
+  
+  display: flex;
+  flex-direction: row;
+  padding-top: 45.5%;
+  
+}
+
+.carouselTrack {
+  display: flex;
+}
+
+
+
